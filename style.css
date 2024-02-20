@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f8fe;
+}
+
+#header,
+#result {
+    font-family: 'Protest Riot', sans-serif;
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+main {
+    width: 700px;
+    background-color: #787c7f;
+    border-radius: 0.3rem;
+    color: white;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.form-buttons button {
+    width: 200px;
+    padding: 5px 20px;
+    text-align: center;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <div class="container-fluid">
+        
+        <!--Header-->
+        <header class="text-center my-5">
+            <h1 id="header">Currency Converter</h1>
+        </header>
+
+        <!--Main-->
+        <main class="mx-auto p-5">
+            <label for="amount" class="form-label">Amount to convert:</label></br>
+            <input type="number" name="number" class="form-control" id="amountInput" placeholder="0.00"/>
+
+            <div class="row my-4">
+                <div class="col-md-6 col-ms-6">
+                    <div class="input-group">
+                        <label class="input-group-text">From</label>
+
+                        <select class="form-select"id="fromCurrency">
+                            <option selected>Select one</option>
+                            <option>AED</option>
+                            <option>USD</option>
+                            <option>INR</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-ms-6">
+                    <div class="input-group">
+                        <label class="input-group-text">To</label>
+                        
+                        <select class="form-select" id="toCurrency" >
+                            <option selected>Select one</option>
+                            <option>AED</option>
+                            <option>USD</option>
+                            <option>INR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-buttons text-center">
+                <button type="submit" class="btn btn-primary" id="convertAmount">Convert</button>
+                <button type="submit" class="btn btn-primary" id="resetButton">Reset</button>
+            </div>
+        </main>
+
+        <div class="text-center my-5" id="result"></div>
+
+    </div>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

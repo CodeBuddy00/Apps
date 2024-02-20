@@ -1,0 +1,1 @@
+Add function to cretate "options" in "Select" element by fetching available currency options from the API.
